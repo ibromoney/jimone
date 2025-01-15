@@ -1,0 +1,613 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(62, 168, 62);
+    color: #fff;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#navlink {
+    display: flex;
+    list-style: none;
+}
+
+#navlink li a {
+    color: #fff;
+    text-decoration: none;
+    padding:  20px;
+}
+
+#navlink li a:hover {
+    background-color: rgba(255, 255, 255, 0.299);
+    transition: 1s ease-in-out;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    #navlink {
+        display: none;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        padding: 10px;
+        width: 100%;
+        height: 300px;
+        text-align:justify;
+        gap: 50px;
+        background-color: rgb(107, 164, 20);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+  
+    
+    #navlink.hidden {
+        display: flex;
+ 
+    }
+    
+    .menu {
+        display: flex;
+    }
+}
+
+
+
+
+    .Home .con {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+.Home .con button {
+    width: 13%;
+    height: 50px;
+    background-color: rgb(107, 164, 20);
+    border: 3px solid lightgray;
+    color: white;
+    font-weight: bolder;
+    border-radius: 8px;
+
+}
+
+button:hover {
+    background-color: white;
+    color: #416b90;
+    border: 3px solid #416b90;
+    transition: 1.5s ease-in-out;
+
+}
+
+
+.Home .con2 {
+    width: 65%;
+    margin-top: 20px;
+    line-height: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: rgb(191, 186, 186);
+}
+
+.Home .con3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45%;
+    margin-top: 70px;
+
+}
+
+
+.Home .con3 .box {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(191, 186, 186);
+}
+
+.box img {
+    border-radius: 10px;
+
+}
+
+.Home .con4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    margin-top: 70px;
+
+}
+
+
+.Home .con4 .box {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(191, 186, 186);
+}
+
+.box img {
+    border-radius: 10px;
+
+
+}
+
+.con5 {
+    width: 40%;
+    /* height: 200px; */
+    color: white;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px;
+    background-color: rgb(107, 164, 20);
+}
+
+.Home H1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    font-weight: bolder;
+    color: rgb(111, 104, 104);
+}
+
+.inventory {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding: 20px;
+}
+
+
+.box-1 {
+    width: 80%;
+    height: 300px;
+    border: 2px solid  rgb(62, 168, 62) ;
+    border-radius: 20px;
+    display: flex;
+    padding: 10px;
+
+}
+
+.box-1 .BOX1 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.BOX1 img {
+    width: 100%;
+}
+
+.BOX1 span {
+    width: 50%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(107, 164, 20);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+
+}
+
+.BOX1 h3 {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    color: rgb(191, 186, 186);
+    text-align: center;
+    height: 250px;
+    margin-top: 20px;
+}
+
+.BOX1 h4 {
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    font-weight: bold;
+
+    color: rgb(191, 186, 186);
+    text-align: center;
+}
+
+.BOX1 h5 {
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: green;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.About {
+    width: 90%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.About h2 {
+    color: rgb(111, 104, 104);
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+
+.About .About1 {
+    width: 62%;
+    padding: 10px;
+    background-color: white;
+    color: rgb(191, 186, 186);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+
+  .About button {
+    width: 62%;
+    color: white;
+    background-color: rgb(107, 164, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 0.8rem;
+    border-radius: 7px;
+}
+
+
+.contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact1{
+    width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact1 h2 {
+font-size: 1.5rem;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bolder;
+}
+
+.contact1  .line{
+    width: 100%;
+    height: 4px;
+    background-color: rgb(107, 164, 20);
+}
+
+.contact2{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 20px;
+   background-color: rgb(255, 253, 253);
+    gap: 20px;
+}
+
+.contact2  .contact-2{
+    width: 45%;
+    height: fit-content;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.contact-2  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+ 
+
+}
+
+form  input {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(191, 186, 186);
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+}
+
+form  button {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(191, 186, 186);
+
+}
+
+
+
+.contact-2  h4 {
+
+font-size: 1.3rem;
+font-family:Arial, Helvetica, sans-serif;
+font-weight: bolder;
+text-align: center;
+
+
+}
+
+.contact-2 .line{
+    width: 80%;
+    height: 2px;
+    background-color: rgb(107, 164, 20);
+    margin-left: 40px;
+    
+}
+
+
+.contact-2  p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: rgb(111, 104, 104);
+}
+.contact-2  h5{
+    color: rgb(111, 104, 104);
+    text-align:right;
+    
+}
+
+.time{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.2rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(191, 186, 186);
+}
+
+.time h4{
+    font-size: 0.9rem;
+}
+
+iframe{
+    width: 100%;
+}
+
+footer{
+    width: 100%;
+    background-color: rgb(107, 164, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    font-size: 1.2rem;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 650px) {
+  
+  .Home {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .Home img {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    
+}
+
+
+ .Home .con  button {
+
+        margin-top: 20px;
+        width: 40%;
+        border: 1px solid white;
+        font-size: 1.2rem;
+}
+
+.Home  .con2 {
+    width: 100%;
+    padding: 10px;
+    
+}
+.Home  .con3   {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.Home  .con3 .box  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+ .con3 .box img{
+    width: 100%;   
+}
+
+.Home  .con4  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.Home  .con4 .box  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+ .con4 .box img{
+    width: 100%;   
+}
+
+.con5{
+    width: 100%;
+
+}
+
+.inventory{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+padding: 20px;
+
+}
+
+.inventory .box-1{
+    width: 100%;
+    display: flex;   
+}
+
+.inventory .BOX1   {
+    width: 100%;
+}
+
+
+.About {
+    width: 100%;
+}
+.About  h2 {
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+.About  .About1{
+    width: 98%;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.contact1 h2 {
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+.contact .contact2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;  
+    padding: 10px;
+}
+
+.contact .contact-2{
+    padding: 10px;
+    width: 100%;
+}
+
+.contact-2 .line{
+    margin-left: 10px;
+}
+
+
+
+footer{
+    width: 100%;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+}
+
+
+}
